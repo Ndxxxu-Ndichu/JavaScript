@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://kit.fontawesome.com/6435d896fe.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="container">
+    <h1 class="display-4 text-center">PreCo<br>
+        <i class="fas fa-car" ></i> <span class="text-primary">Car</span>
+        Listing
+    </h1>
+    <br>
+    <form id="car-form">
+        <div class="form-group">
+            <label for="model">Car Model</label>
+            <input type="text" id="model" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="owner">Owner</label>
+            <input type="text" id="owner" class="form-control">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="reg">Reg Number</label>
+            <input type="text" id="reg" class="form-control">
+        </div>
+        <br>
+        <input type="submit" value="Add Vehicle" class="btn btn-primary btn-block">
+    </form>
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>Car Model</th>
+                <th>Owner</th>
+                <th>Reg Number</th>
+            </tr>
+        </thead>
+        <tbody id="car-list"></tbody>
+    </table>
+<script src="script.js"></script>    
+</body>
+</html>
